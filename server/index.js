@@ -34,7 +34,8 @@ io.on('connection', async (socket) => {
     socket.on('enterRoom', async({ name, room }) => {
 
         // leave previous room 
-        const prevRoom = await getUser(socket.id)?.room
+        let prevRoom = await getUser(socket.id)
+        prevRoom = prevRoom?.room
 
         if (prevRoom) {
             await socket.leave(prevRoom)
@@ -103,7 +104,8 @@ io.on('connection', async (socket) => {
 
     // Listen for activity 
     socket.on('activity', async(name) => {
-        const room = await getUser(socket.id)?.room
+        let room = await getUser(socket.id)
+        room = room?.room
         if (room) {
             socket.broadcast.to(room).emit('activity', name)
         }
