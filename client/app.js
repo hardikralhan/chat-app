@@ -49,9 +49,9 @@ socket.on("message", (data) => {
     const { name, text, time } = data
     const li = document.createElement('li')
     li.className = 'post'
-    if (name === nameInput.value) li.className = 'post post--left'
-    if (name !== nameInput.value && name !== 'Admin') li.className = 'post post--right'
-    if (name !== 'Admin') {
+    if (name === nameInput.value) li.className = 'post post--left'  // if a user
+    if (name !== nameInput.value && name !== 'Admin') li.className = 'post post--right' // if a user
+    if (name !== 'Admin') {  // if admin then show message as header
         li.innerHTML = `<div class="post__header ${name === nameInput.value
             ? 'post__header--user'
             : 'post__header--reply'
