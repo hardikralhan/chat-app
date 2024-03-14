@@ -40,3 +40,11 @@ WebSocket Communication: Socket.io is chosen as the primary library for handling
 
 Text-Based Interface: The user interface for sending and receiving messages is kept simple and text-based. 
                       While more sophisticated interfaces could be implemented (e.g., graphical or multimedia chat), a text-based interface reduces complexity and allows for quick development and testing.
+
+
+APPLICATION WILL LOOK LIKE 
+
+![image](https://github.com/hardikralhan/chat-app/assets/77456767/b0c1df0d-17f9-4834-b04c-00452ed0aedc)
+
+Add name and room name and then click join.
+Then another person can join the same room with same room name
