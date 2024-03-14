@@ -44,7 +44,8 @@ Text-Based Interface: The user interface for sending and receiving messages is k
 
 APPLICATION WILL LOOK LIKE 
 
-![image](https://github.com/hardikralhan/chat-app/assets/77456767/b0c1df0d-17f9-4834-b04c-00452ed0aedc)
+![image](https://github.com/hardikralhan/chat-app/assets/77456767/6f75d8bf-91b9-4bd0-8801-3a148c2ddcb0)
+
 
 Add name and room name and then click join.
 Then another person can join the same room with same room name
